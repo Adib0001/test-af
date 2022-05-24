@@ -1,0 +1,253 @@
+{
+	"info": {
+		"_postman_id": "28b413b7-063f-4913-9ccc-1214cac95032",
+		"name": "test-af",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/api/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserNotFound",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/api/user/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"user",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createValidUser",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"unid\": 13,\r\n    \"firstName\": \"postman fn\",\r\n    \"lastName\": \"pstman ln\",\r\n    \"birthDate\": \"2004-05-16\",\r\n    \"address\": \"juan les pins FRANCE\",\r\n    \"email\": \"email@email.com\",\r\n    \"birthPlace\": null,\r\n    \"gender\": null\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"user"
+					],
+					"query": [
+						{
+							"key": "content-type",
+							"value": "application/json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createUserAgeLessThan18",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"unid\": 1,\r\n    \"firstName\": \"postman fn\",\r\n    \"lastName\": \"pstman ln\",\r\n    \"birthDate\": \"2005-05-16\",\r\n    \"address\": \"juan les pins France\",\r\n    \"email\": \"email@email.com\",\r\n    \"birthPlace\": null,\r\n    \"gender\": null\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createUserWithoutRequiredField",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"unid\": 2,\r\n    \"lastName\": \"lastName2\",\r\n    \"age\": 25,\r\n    \"address\": \"my adress2\",\r\n    \"nationality\": \"algeria\",\r\n    \"gender\": \"homme\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createUserEmailNotValid",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"unid\": 1,\r\n    \"firstName\": \"postman fn\",\r\n    \"lastName\": \"pstman ln\",\r\n    \"birthDate\": \"1995-05-16\",\r\n    \"address\": \"juan les pins France\",\r\n    \"email\": \"emai.com\",\r\n    \"birthPlace\": null,\r\n    \"gender\": null\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createUserFirstNameNull",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"unid\": 1,\r\n    \"firstName\": \"\",\r\n    \"lastName\": \"pstman ln\",\r\n    \"birthDate\": \"1995-05-16\",\r\n    \"address\": \"juan les pins France\",\r\n    \"email\": \"email@email.com\",\r\n    \"birthPlace\": null,\r\n    \"gender\": null\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createUserDoesntLiveFrance",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"unid\": 1,\r\n    \"firstName\": \"postman fn\",\r\n    \"lastName\": \"pstman ln\",\r\n    \"birthDate\": \"2004-05-16\",\r\n    \"address\": \"juan les pins netherlands\",\r\n    \"email\": \"email@email.com\",\r\n    \"birthPlace\": null,\r\n    \"gender\": null\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
