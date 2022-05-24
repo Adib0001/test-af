@@ -1,0 +1,10 @@
+com.test.af
+com.test.af.annotation
+com.test.af.dto
+com.test.af.exceptions
+com.test.af.model
+com.test.af.repository
+com.test.af.service
+com.test.af.service.mappers
+com.test.af.Validator
+com.test.af.web.rest

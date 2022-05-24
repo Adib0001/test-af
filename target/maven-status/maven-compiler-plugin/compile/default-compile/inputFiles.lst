@@ -1,0 +1,13 @@
+C:\Users\alezzar\Documents\test-af\src\main\java\com\test\af\service\mappers\UserMapper.java
+C:\Users\alezzar\Documents\test-af\src\main\java\com\test\af\TestAfApplication.java
+C:\Users\alezzar\Documents\test-af\src\main\java\com\test\af\Validator\BirthDateValidator.java
+C:\Users\alezzar\Documents\test-af\src\main\java\com\test\af\exceptions\UserNotFoundException.java
+C:\Users\alezzar\Documents\test-af\src\main\java\com\test\af\Validator\CountryResidenceValidator.java
+C:\Users\alezzar\Documents\test-af\src\main\java\com\test\af\exceptions\ControllerAdvisor.java
+C:\Users\alezzar\Documents\test-af\src\main\java\com\test\af\annotation\BirthDate.java
+C:\Users\alezzar\Documents\test-af\src\main\java\com\test\af\web\rest\UserResource.java
+C:\Users\alezzar\Documents\test-af\src\main\java\com\test\af\model\User.java
+C:\Users\alezzar\Documents\test-af\src\main\java\com\test\af\repository\UserRepository.java
+C:\Users\alezzar\Documents\test-af\src\main\java\com\test\af\service\UserService.java
+C:\Users\alezzar\Documents\test-af\src\main\java\com\test\af\annotation\CountryResidence.java
+C:\Users\alezzar\Documents\test-af\src\main\java\com\test\af\dto\UserDto.java

@@ -1,0 +1,15 @@
+com\test\af\Validator\BirthDateValidator.class
+com\test\af\service\mappers\UserMapperImpl.class
+com\test\af\Validator\CountryResidenceValidator.class
+com\test\af\web\rest\UserResource.class
+com\test\af\model\User_.class
+com\test\af\dto\UserDto.class
+com\test\af\annotation\BirthDate.class
+com\test\af\model\User.class
+com\test\af\service\UserService.class
+com\test\af\exceptions\UserNotFoundException.class
+com\test\af\service\mappers\UserMapper.class
+com\test\af\TestAfApplication.class
+com\test\af\exceptions\ControllerAdvisor.class
+com\test\af\annotation\CountryResidence.class
+com\test\af\repository\UserRepository.class

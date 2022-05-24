@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.test.af"},{"l":"com.test.af.annotation"},{"l":"com.test.af.dto"},{"l":"com.test.af.exceptions"},{"l":"com.test.af.model"},{"l":"com.test.af.repository"},{"l":"com.test.af.service"},{"l":"com.test.af.service.mappers"},{"l":"com.test.af.Validator"},{"l":"com.test.af.web.rest"}]

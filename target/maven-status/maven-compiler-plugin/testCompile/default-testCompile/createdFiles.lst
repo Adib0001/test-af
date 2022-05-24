@@ -1,0 +1,4 @@
+com\test\af\repository\UserRepositoryTest.class
+com\test\af\web\rest\UserResourceTest.class
+com\test\af\service\UserServiceTest.class
+com\test\af\TestAfApplicationTests.class
