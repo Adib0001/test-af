@@ -15,7 +15,7 @@ import javax.validation.Valid;
  * <pre>
  * @author Adib LEZZAR
  * This class is the rest controller which is the entry point of the application
- * </pre>
+ * </pre>Rest controller
  */
 @RestController
 @RequestMapping("/api/user")

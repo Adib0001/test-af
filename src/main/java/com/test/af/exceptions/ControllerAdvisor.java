@@ -45,7 +45,7 @@ public class ControllerAdvisor extends ResponseEntityExceptionHandler {
      * @param headers Headers of http request
      * @param status Status of http response
      * @param request The http request
-     * @return
+     * @return Http bad request response
      */
     @Override
     protected ResponseEntity<Object> handleMethodArgumentNotValid(
